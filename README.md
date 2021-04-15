@@ -26,7 +26,7 @@ In order to get seperated outputs whenever the user wants I added `test_generato
    ```bash
    $ python test_generator.py --weight weights/netG_last.pt
    Namespace(bsize=64, img_size=64, latent=256, nc=3, outdir='output', weight='weights/netG_last.pt')
-   64 image are created
+   64 image created
    ```
    ```bash
    $ python test_discriminator.py

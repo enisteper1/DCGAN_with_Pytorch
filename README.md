@@ -1,6 +1,6 @@
 ## Introduction
 Main purpose of this project for me to understand basics of how neural network and optimizers should be selected at DCGAN. While trying different datasets from kaggle
-I tried optimizer SGD with nesterov instead of Adam. I was thinking about it may decrease the speed of training in contrast output quality of GAN would be increased. However, even if it decreased the training speed outputs were not better than Adam. Therefore, I changed generator model activation functions to leaky relu instead of relu. Also, added noise to discriminator and dropouts with the aim of preventing it to overwhelm generator.
+I tried optimizer SGD with nesterov instead of Adam. I was thinking about it may decrease the speed of training in contrast output quality of GAN would be increased. However, even if it decreased the training speed outputs were not better than Adam. Therefore, I changed generator model activation functions to leaky relu instead of relu. Also, added noise to discriminator and dropouts with the aim of preventing it to overwhelm generator. As a result, new pokemon images are created
 
 
 ## Train
@@ -19,6 +19,7 @@ Current output is saved to output directory as epoch0.png
 ## Improvement
 <img src=https://user-images.githubusercontent.com/45767042/114794280-c9207400-9d94-11eb-9eca-b031da7b902b.gif>
 <img src=https://user-images.githubusercontent.com/45767042/114804803-92edef00-9daa-11eb-83e2-ec51cb97c97e.png>
+
   
 ## Test
 In order to get seperated outputs whenever the user wants I added `test_generator.py` which generates image with respect to batch size and saves individually. In addition,   `test_discriminator.py` that prints about image fake or real.
@@ -44,4 +45,4 @@ If you are going to use it you need to open zip file inside this folder. Otherwi
 
 ## Reference
 - This project is mainly referenced from [DCGAN-Pytorch](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
-- Dataset is taken from [kaggle](https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html)
+- Dataset is taken from [kaggle-pokemon](https://www.kaggle.com/djilax/pkmn-image-dataset)
